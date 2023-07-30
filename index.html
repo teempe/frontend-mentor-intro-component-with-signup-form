@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+        <title>Frontend Mentor | Intro component with sign up form</title>
+    </head>
+
+    <body>
+        <header></header>
+
+        <main>
+            <section class="section-intro-component">
+                <header class="intro-component__header">
+                    <h1 class="intro-component__title">Learn to code by watching others</h1>
+                    <p class="intro-component__description">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+                        but understanding how developers think is invaluable. </p>
+                </header>
+
+                <section class="section-signup">
+                    <h2 class="signup__title"><em class="signup__title-em">Try it free 7 days</em> then $20/mo. thereafter</h2>
+                    <div class="container">
+                        <form novalidate class="signup-form">
+                            <label for="first-name" class="visually-hidden">First Name</label>
+                            <input type="text" name="firstName" id="first-name" placeholder="First Name" class="signup-form__input">
+                            <p class="hidden signup-form__input-error-msg">First Name cannot be empty</p>
+                            <label for="last-name" class="visually-hidden">Last Name</label>
+                            <input type="text" name="lastName" id="last-name" placeholder="Last Name" class="signup-form__input">
+                            <p class="hidden signup-form__input-error-msg">Last Name cannot be empty</p>
+                            <label for="email" class="visually-hidden">Email Address</label>
+                            <input type="email" name="email" id="email" placeholder="Email Address" class="signup-form__input">
+                            <p class="hidden signup-form__input-error-msg">Email cannot be empty</p>
+                            <label for="password" class="visually-hidden">Password</label>
+                            <input type="password" name="password" id="password" placeholder="Password" class="signup-form__input">
+                            <p class="hidden signup-form__input-error-msg">Password cannot be empty</p>
+                            <button type="submit" class="signup-form__btn">Claim your free trial</button>
+                        </form>
+                        <p class="signup__terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer></footer>
+
+        <script type="module" src="script.js"></script>
+    </body>
+</html>
